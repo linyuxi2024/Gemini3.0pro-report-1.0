@@ -1349,4 +1349,9 @@ export const INITIAL_GROUPS: TestGroup[] = [
       }
     ],
   },
+  {
+    id: 'g2',
+    title: '🎮交互游戏',
+    cases: [],
+  }
 ];
