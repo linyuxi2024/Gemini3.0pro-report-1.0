@@ -1345,7 +1345,7 @@ export const INITIAL_GROUPS: TestGroup[] = [
         status: CaseStatus.Success,
         prompt: MEMORY_STARDUST_PROMPT,
         code: MEMORY_STARDUST_CODE,
-        previewHtml: MEMORY_STARDUST_HTML,
+        previewHtml: 'https://gemini.google.com/share/695774416ca0',
       }
     ],
   },

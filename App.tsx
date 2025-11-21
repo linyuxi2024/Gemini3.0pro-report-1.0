@@ -249,7 +249,13 @@ function App() {
                         <MessageSquare size={14} />
                       </button>
                       <button 
-                        onClick={() => openViewer('preview', testCase.title, testCase.previewHtml)}
+                        onClick={() => {
+                          if (testCase.previewHtml.startsWith('http')) {
+                            window.open(testCase.previewHtml, '_blank');
+                          } else {
+                            openViewer('preview', testCase.title, testCase.previewHtml);
+                          }
+                        }}
                         className="bg-slate-800 hover:bg-indigo-600 text-slate-400 hover:text-white py-1.5 rounded text-xs font-medium transition flex justify-center items-center" title="Preview"
                       >
                         <Eye size={14} />
